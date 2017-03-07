@@ -5,7 +5,13 @@
 	var RGBChange = function() {
 	  $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
 	};	
-		
+	/*parallax effect*/
+	$('div.bgEffect').each(function(){ 
+    var $obj = $(this); $(window).scroll(function() { 
+        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+        var bgpos = '50% '+ yPos + 'px'; $obj.css('background-position', bgpos ); 
+    }); 
+});	
 /*scroll to top*/
 
 $(document).ready(function(){
