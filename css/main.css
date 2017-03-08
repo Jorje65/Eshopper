@@ -394,7 +394,7 @@ ul.sub-menu {
 .iframe-img {
   position: relative;
   display: block;
-  height: 61px;
+  height: 170px;
   margin-bottom: 10px;
   border: 2px solid #CCCCC6;
   border-radius: 3px;
@@ -1043,7 +1043,7 @@ h2.title {
 
 .recommended_items {
   overflow: hidden;
-  height:550px;
+  height:480px;
 }
 
 #recommended-item-carousel .carousel-inner .item {
@@ -2589,7 +2589,7 @@ html, body {
     text-align: center; 
     margin:0 auto;
      font-size:40px;
-    color: #FE980F 
+    color: #666; 
 } 
 
 .article h1 {
@@ -2602,7 +2602,50 @@ html, body {
     margin-top:25px;
     color: #ffffff;
 }
+.svg-wrapper {
+  height: 60px;
+	margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+   text-align: center;
+}
 
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #FE980F;
+}
 
+.text {
+  color: #666;
+  font-family: 'Roboto, sans-serif';
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
 
 
