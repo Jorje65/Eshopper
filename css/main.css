@@ -6,9 +6,37 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding:0px 0px 0px 4px;
+
+}
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding:0px 0px 0px 4px;
+
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-color:white;
+  padding: 25px 30px 30px;
+
+}
+.bg{
+    
+   background: url('../images/home/bg.jpg') no-repeat center center fixed;
+   background-size: cover;
+ 
+
+
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  background:;
+  background:none;
   position: relative;
   font-weight:400px;
 }
@@ -68,7 +96,7 @@ a#scrollUp i{
 **************************/
 
 .header_top {
-  background: none repeat scroll 0 0 #F0F0E9;
+  background: rgba(49,54,73,1);
 }
 
 .contactinfo ul li:first-child{
@@ -77,7 +105,7 @@ a#scrollUp i{
 
 .contactinfo ul li a{
   font-size: 12px;
-  color: #696763;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -90,7 +118,7 @@ a#scrollUp i{
 .social-icons ul li a {
   border: 0 none;
   border-radius: 0;
-  color: #696763;
+  color: white;
   padding:0px;
 }
 
@@ -346,7 +374,8 @@ ul.sub-menu {
 **************************/
 
 #footer {
-  background: #F0F0E9;
+  background: rgba(49,54,73,1);
+
 }
 
 
@@ -382,7 +411,7 @@ ul.sub-menu {
 }
 
 .video-gallery {
-  margin-top: 57px;
+  margin-top: 0px;
   position: inherit;
 }
 
@@ -2574,7 +2603,8 @@ html, body {
 
 #section2 { 
     height:100%;
-    background: url('http://mutuamatheka.co.ke/wp-content/uploads/2012/04/001_NAIROBI_WEBREADY_MUTUA-MATHEKA-11.jpg') no-repeat center center fixed; 
+    position:no-repeat center center fixed;
+    background-image: url(../../images/home/bg.jpg) ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2621,7 +2651,7 @@ html, body {
 }
 
 .text {
-  color: #666;
+  color: white;
   font-family: 'Roboto, sans-serif';
   font-size: 20px;
   letter-spacing: 2px;
@@ -2647,5 +2677,11 @@ html, body {
   -webkit-animation: 0.5s draw linear forwards;
   animation: 0.5s draw linear forwards;
 }
-
+.scroll-btn
+{
+   height:700px; 
+   background-color: white;
+   overflow: hidden;
+  
+}
 
